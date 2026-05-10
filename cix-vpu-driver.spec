@@ -10,6 +10,9 @@ License:        GPL-2.0-or-later
 URL:            https://github.com/cixtech/cix_opensource__vpu_driver
 BuildArch:      noarch
 
+# rpkg 自动生成 %{name}-%{version}.tar.gz，必须显式声明
+Source0:        %{name}-%{version}.tar.gz
+
 Requires:       dkms >= 3.0.0
 Requires(post): dkms >= 3.0.0
 Requires(preun): dkms >= 3.0.0
